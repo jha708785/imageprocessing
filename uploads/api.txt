@@ -1,0 +1,36 @@
+1. downloadProfileImage(GET)
+http://localhost:8080/api/users/profile-image-download/gopal
+
+2. upload_profile_image (POST)
+http://localhost:8080/api/users/upload
+form-data
+
+username :xxxxxx
+file :xxxxx
+
+3. delete user profile image (DELETE)
+http://localhost:8080/api/users/delete?username=xxxxxx
+
+4. update user profie pick (PUT)
+http://localhost:8080/api/users/update-profile-image
+
+form-data
+username:xxxxxxxxxx
+file:modify file name
+
+5. get profile image (GET)
+http://localhost:8080/api/users/image/gopal
+
+6. user info pdf generate and download (GET)
+http://localhost:8080/api/users/profile-pdf/gopal
+
+7. crop image (POST)
+http://localhost:8080/api/users/upload-crop
+
+FORM DATA
+username:xxxxxx
+file:xxxxxxxx
+x:xxxx
+y:xxxx
+height:xxxxx
+width:xxxxxx

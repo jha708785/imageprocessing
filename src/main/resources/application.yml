@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: ProfileImage
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/db1
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: sumit
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
+
+server:
+  port: 8080
+
+wati:
+  otp:
+    template:
+      name: "guzloo_otp"
+  send:
+    template:
+      msg:
+        url: "https://app-server.wati.io"
+  token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJhNWVhYmNiYi0yZTRlLTRmNzEtODJlYi0zODEwNjNiODk1YzIiLCJ1bmlxdWVfbmFtZSI6InNrNzgyMTczMEBnbWFpbC5jb20iLCJuYW1laWQiOiJzazc4MjE3MzBAZ21haWwuY29tIiwiZW1haWwiOiJzazc4MjE3MzBAZ21haWwuY29tIiwiYXV0aF90aW1lIjoiMDYvMTkvMjAyNSAyMDoyODowNiIsImRiX25hbWUiOiJ3YXRpX2FwcF90cmlhbCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlRSSUFMIiwiZXhwIjoxNzUwOTgyNDAwLCJpc3MiOiJDbGFyZV9BSSIsImF1ZCI6IkNsYXJlX0FJIn0.FmnoArBPQsp1GGwqDj9Ia0ft44o95L9HAsM4AMFzUDU"
+
